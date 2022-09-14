@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header>
+      <div class="container row">
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <a href="#" class="logo">
+          <img src="./images/logo.svg" alt="snap logo" />
+        </a>
+        <div class="dropdown nav__list">
+          <div class="select">
+            <span class="selected">Features</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="" class="nav__link">Todo List</a>
+            </li>
+            <li>
+              <a href="" class="nav__link">Calendars</a>
+            </li>
+            <li>
+              <a href="" class="nav__link">Reminders</a>
+            </li>
+            <li>
+              <a href="" class="nav__link">Planning</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown nav__list">
+          <div class="select">
+            <span class="selected">Company</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Careers</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
