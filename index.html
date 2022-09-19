@@ -18,55 +18,73 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <header>
-      <div class="container row">
-        <button class="nav-toggle" aria-label="open navigation">
-          <span class="hamburger"></span>
-        </button>
-        <a href="#" class="logo">
-          <img src="./images/logo.svg" alt="snap logo" />
-        </a>
-        <div class="dropdown nav__list">
-          <div class="select">
-            <span class="selected">Features</span>
-            <div class="caret"></div>
+    <nav class="nav">
+      <a href="#" class="logo">
+        <img src="./images/logo.svg" alt="snap logo" />
+      </a>
+      <div class="dropdown">
+        <div class="select-menu">
+          <div class="select-btn">
+            <span class="btn-text">Features</span>
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt="arrow menu"
+              class="arrow-menu"
+            />
           </div>
-          <ul class="menu">
-            <li>
-              <a href="" class="nav__link">Todo List</a>
+          <ul class="options">
+            <li class="option">
+              <img src="./images/icon-todo.svg" alt="" />
+              <span class="option-text">Todo List</span>
             </li>
-            <li>
-              <a href="" class="nav__link">Calendars</a>
+            <li class="option">
+              <img src="./images/icon-calendar.svg" alt="" />
+              <span class="option-text">Calendar</span>
             </li>
-            <li>
-              <a href="" class="nav__link">Reminders</a>
+            <li class="option">
+              <img src="./images/icon-reminders.svg" alt="" />
+              <span class="option-text">Reminders</span>
             </li>
-            <li>
-              <a href="" class="nav__link">Planning</a>
+            <li class="option">
+              <img src="./images/icon-planning.svg" alt="" />
+              <span class="option-text">Planning</span>
             </li>
           </ul>
         </div>
-        <div class="dropdown nav__list">
-          <div class="select">
-            <span class="selected">Company</span>
-            <div class="caret"></div>
+        <!-- second dropdown -->
+        <div class="select-menu">
+          <div class="select-btn">
+            <span class="btn-text">Company</span>
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt="arrow menu"
+              class="arrow-menu"
+            />
           </div>
-          <ul class="menu">
-            <li>History</li>
-            <li>Our Team</li>
-            <li>Blog</li>
+          <ul class="options">
+            <li class="option">
+              <a href="#" class="nav__link">History</a>
+            </li>
+            <li class="option">
+              <a href="#" class="nav__link">Our Team</a>
+            </li>
+            <li class="option">
+              <a href="#" class="nav__link">Blog</a>
+            </li>
           </ul>
         </div>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">Careers</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">About</a>
-          </li>
-        </ul>
       </div>
-    </header>
+      <!-- normal nav items -->
+      <div class="nav-list">
+        <a href="#" class="nav__link">Careers</a>
+
+        <a href="#" class="nav__link">About</a>
+      </div>
+      <div class="action_btn">
+        <a href="#" class="action__btn">Login</a>
+        <a href="#" class="action__btn">Register</a>
+      </div>
+    </nav>
 
     <div class="attribution">
       Challenge by
@@ -74,5 +92,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

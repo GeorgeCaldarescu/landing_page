@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  align-self: center;
+}
+
+.nav {
+  display: flex;
+  border: 1px solid black;
+  max-width: 100%;
+}
+
+.dropdown {
+  border: 1px solid red;
+  display: flex;
+  padding: 0 2rem 0;
+  margin-top: 2rem;
+}
+
+.select-menu + .select-menu {
+  margin-left: 2rem;
+}
+
+.nav-list {
+  border: 1px solid green;
+  margin-top: 2rem;
+}
+
+.action_btn {
+  border: 1px solid blue;
+  margin-top: 2rem;
+  margin-left: 50rem;
+  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+}
