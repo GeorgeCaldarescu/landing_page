@@ -18,71 +18,100 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <nav class="nav">
+    <nav>
       <a href="#" class="logo">
         <img src="./images/logo.svg" alt="snap logo" />
       </a>
-      <div class="dropdown">
-        <div class="select-menu">
-          <div class="select-btn">
-            <span class="btn-text">Features</span>
-            <img
-              src="./images/icon-arrow-down.svg"
-              alt="arrow menu"
-              class="arrow-menu"
-            />
+      <a href="#" class="hamburger">
+        <img src="./images/icon-menu.svg" alt="open menu" />
+      </a>
+      <!-- mobile navigation -->
+      <div class="overlay">
+        <div class="mobile-nav">
+          <img src="./images/icon-close-menu.svg" alt="close menu" />
+          <div class="mobile_nav_con">
+            <!-- first dropdown -->
+            <div class="dropdown">
+              <div class="dropbtn">
+                Features
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="open dropdown menu"
+                />
+              </div>
+              <div class="dropdown_content">
+                <a href="#"
+                  ><img src="./images/icon-todo.svg" alt="" />TodoList</a
+                >
+                <a href="#"
+                  ><img src="./images/icon-calendar.svg" alt="" />Calendar</a
+                >
+                <a href="#"
+                  ><img src="./images/icon-reminders.svg" alt="" />Reminder</a
+                >
+                <a href="#"
+                  ><img src="./images/icon-planning.svg" alt="" />Planning</a
+                >
+              </div>
+            </div>
+            <!-- second dropdown -->
+            <div class="dropdown">
+              <div class="dropbtn">
+                Company
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="open dropdown menu"
+                />
+              </div>
+              <div class="dropdown_content">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+            </div>
           </div>
-          <ul class="options">
-            <li class="option">
-              <img src="./images/icon-todo.svg" alt="" />
-              <span class="option-text">Todo List</span>
-            </li>
-            <li class="option">
-              <img src="./images/icon-calendar.svg" alt="" />
-              <span class="option-text">Calendar</span>
-            </li>
-            <li class="option">
-              <img src="./images/icon-reminders.svg" alt="" />
-              <span class="option-text">Reminders</span>
-            </li>
-            <li class="option">
-              <img src="./images/icon-planning.svg" alt="" />
-              <span class="option-text">Planning</span>
-            </li>
-          </ul>
+          <a href="#">Careers</a>
+          <a href="#">About</a>
+        </div>
+      </div>
+      <!-- desktop navigation -->
+      <div class="nav_ul">
+        <div class="dropdown">
+          <div class="drop-btn">
+            Features
+            <img src="./images/icon-arrow-down.svg" alt="open dropdown menu" />
+          </div>
+          <div class="dropdown_content">
+            <a href="#"><img src="./images/icon-todo.svg" alt="" />TodoList</a>
+            <a href="#"
+              ><img src="./images/icon-calendar.svg" alt="" />Calendar</a
+            >
+            <a href="#"
+              ><img src="./images/icon-reminders.svg" alt="" />Reminder</a
+            >
+            <a href="#"
+              ><img src="./images/icon-planning.svg" alt="" />Planning</a
+            >
+          </div>
         </div>
         <!-- second dropdown -->
-        <div class="select-menu">
-          <div class="select-btn">
-            <span class="btn-text">Company</span>
-            <img
-              src="./images/icon-arrow-down.svg"
-              alt="arrow menu"
-              class="arrow-menu"
-            />
+        <div class="dropdown">
+          <div class="drop-btn">
+            Company
+            <img src="./images/icon-arrow-down.svg" alt="open dropdown menu" />
           </div>
-          <ul class="options">
-            <li class="option">
-              <a href="#" class="nav__link">History</a>
-            </li>
-            <li class="option">
-              <a href="#" class="nav__link">Our Team</a>
-            </li>
-            <li class="option">
-              <a href="#" class="nav__link">Blog</a>
-            </li>
-          </ul>
+          <div class="dropdown_content">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
         </div>
-      </div>
-      <!-- normal nav items -->
-      <div class="nav-list">
-        <a href="#" class="nav__link">Careers</a>
-
-        <a href="#" class="nav__link">About</a>
-      </div>
-      <div class="action_btn">
-        <a href="#" class="action__btn">Login</a>
-        <a href="#" class="action__btn">Register</a>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+        <div class="nav_btns">
+          <a href="#" class="nav__btn">Login</a>
+          <a href="#" class="nav__btn">Registration</a>
+        </div>
       </div>
     </nav>
 

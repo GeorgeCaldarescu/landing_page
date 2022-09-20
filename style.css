@@ -15,40 +15,74 @@ img {
   max-width: 100%;
 }
 
-.logo {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  align-self: center;
+a {
+  text-decoration: none;
+  list-style: none;
+  margin: 10px;
+  display: inline-block;
 }
 
-.nav {
+/* mobile desktop */
+.overlay {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* desktop navigation */
+
+nav {
   display: flex;
-  border: 1px solid black;
-  max-width: 100%;
+  align-items: center;
 }
 
-.dropdown {
+.nav_ul {
   border: 1px solid red;
   display: flex;
-  padding: 0 2rem 0;
-  margin-top: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.select-menu + .select-menu {
-  margin-left: 2rem;
+/* dropdown menu */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.nav-list {
-  border: 1px solid green;
-  margin-top: 2rem;
-}
-
-.action_btn {
+.dropdown_content {
+  border-radius: 10px;
+  padding: 20px;
+  /* display: none; */
+  position: absolute;
+  background-color: white;
+  width: 120px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 2;
   border: 1px solid blue;
-  margin-top: 2rem;
-  margin-left: 50rem;
-  justify-content: space-evenly;
+  width: auto;
+}
+
+.dropdown_content a {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 10%;
+  color: black;
+  padding: 1.5rem;
+  border: 1px solid red;
+}
+
+/* nav buttons */
+.nav_btns a:nth-child(1) {
+  color: black;
+}
+
+.nav_btns a:nth-child(2) {
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 25px;
 }
