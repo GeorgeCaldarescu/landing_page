@@ -19,76 +19,85 @@
   </head>
   <body>
     <header>
-      <div class="left-side">
-        <img src="./images/logo.svg" alt="snap-company-logo" class="logo" />
-        <!-- dropdown menu -->
-        <div class="dropdown" data-dropdown>
-          <button class="drop-btn" data-dropdown-button>Features</button>
-          <div class="dropdown-menu">
-            <div class="dropdown-links">
-              <div class="dropdown--links">
-                <img
-                  class="link-img"
-                  src="./images/icon-todo.svg"
-                  alt="todolist-icon"
-                />
-                <a href="#" class="drop-link">Todo List</a>
-              </div>
+      <img src="./images/logo.svg" alt="snap-company-logo" class="logo" />
+      <!-- hamburger menu -->
+      <a href="#" class="toggle-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <nav class="nav">
+        <div class="left-side">
+          <!-- dropdown menu -->
+          <div class="dropdown" data-dropdown>
+            <button class="drop-btn" data-dropdown-button>Features</button>
+            <div class="dropdown-menu">
+              <div class="dropdown-links">
+                <div class="dropdown--links">
+                  <img
+                    class="link-img"
+                    src="./images/icon-todo.svg"
+                    alt="todolist-icon"
+                  />
+                  <a href="#" class="drop-link">Todo List</a>
+                </div>
 
-              <div class="dropdown--links">
-                <img
-                  class="link-img"
-                  src="./images/icon-calendar.svg"
-                  alt="todolist-icon"
-                />
-                <a href="#" class="drop-link">Calendar</a>
-              </div>
+                <div class="dropdown--links">
+                  <img
+                    class="link-img"
+                    src="./images/icon-calendar.svg"
+                    alt="todolist-icon"
+                  />
+                  <a href="#" class="drop-link">Calendar</a>
+                </div>
 
-              <div class="dropdown--links">
-                <img
-                  class="link-img"
-                  src="./images/icon-reminders.svg"
-                  alt="todolist-icon"
-                />
-                <a href="#" class="drop-link">Reminders</a>
-              </div>
+                <div class="dropdown--links">
+                  <img
+                    class="link-img"
+                    src="./images/icon-reminders.svg"
+                    alt="todolist-icon"
+                  />
+                  <a href="#" class="drop-link">Reminders</a>
+                </div>
 
-              <div class="dropdown--links">
-                <img
-                  class="link-img"
-                  src="./images/icon-planning.svg"
-                  alt="todolist-icon"
-                />
-                <a href="#" class="drop-link">Planning</a>
+                <div class="dropdown--links">
+                  <img
+                    class="link-img"
+                    src="./images/icon-planning.svg"
+                    alt="todolist-icon"
+                  />
+                  <a href="#" class="drop-link">Planning</a>
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="dropdown" data-dropdown>
+            <button class="drop-btn" data-dropdown-button>Company</button>
+            <div class="dropdown-menu second-dropdown">
+              <a href="#" class="drop-link">History</a>
+              <a href="#" class="drop-link">Our Team</a>
+              <a href="#" class="drop-link">Blog</a>
+            </div>
+          </div>
+          <!-- normal menu -->
+          <a href="#" class="link">Careers</a>
+          <a href="#" class="link">About</a>
         </div>
 
-        <div class="dropdown" data-dropdown>
-          <button class="drop-btn" data-dropdown-button>Company</button>
-          <div class="dropdown-menu second-dropdown">
-            <a href="#" class="drop-link">History</a>
-            <a href="#" class="drop-link">Our Team</a>
-            <a href="#" class="drop-link">Blog</a>
-          </div>
+        <div class="right-side">
+          <a href="#" class="link">Login</a>
+          <a href="#" class="link-register">Register</a>
         </div>
-        <!-- normal menu -->
-        <a href="#" class="link">Careers</a>
-        <a href="#" class="link">About</a>
-      </div>
-      <div class="right-side">
-        <a href="#" class="link">Login</a>
-        <a href="#" class="link-register">Register</a>
-      </div>
+      </nav>
     </header>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
     <script src="app.js"></script>
   </body>
 </html>

@@ -17,3 +17,13 @@ document.addEventListener("click", (e) => {
     dropdown.classList.remove("active");
   });
 });
+
+// hamburger menu
+
+const toggleBtn = document.getElementsByClassName("toggle-btn")[0];
+
+const navbar = document.getElementsByTagName("nav")[0];
+
+toggleBtn.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
