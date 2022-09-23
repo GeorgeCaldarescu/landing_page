@@ -11,78 +11,68 @@ body {
   font-size: 1.3rem;
 }
 
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-  list-style: none;
-  margin: 10px;
-  display: inline-block;
-}
-
-/* mobile desktop */
-.overlay {
-  display: none;
-}
-
-.hamburger {
-  display: none;
-}
-
-/* desktop navigation */
-
-nav {
+header {
+  border: 1px solid black;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.nav_ul {
+/* .logo {
+  width: 150px;
+} */
+
+.left-side {
   border: 1px solid red;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  margin: 20px 20px;
+  width: 50%;
+}
+
+.right-side {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 20px;
 }
 
 /* dropdown menu */
+.drop-btn {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  background-image: url(./images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  justify-content: space-between;
+}
 
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
-.dropdown_content {
-  border-radius: 10px;
-  padding: 20px;
-  /* display: none; */
+.dropdown-menu {
   position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
   background-color: white;
-  width: 120px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  z-index: 2;
-  border: 1px solid blue;
-  width: auto;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+
+  /* to create animation I am goinig to use opacity instead of display none */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  pointer-events: none;
 }
 
-.dropdown_content a {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  color: black;
-  padding: 1.5rem;
-  border: 1px solid red;
-}
-
-/* nav buttons */
-.nav_btns a:nth-child(1) {
-  color: black;
-}
-
-.nav_btns a:nth-child(2) {
-  color: black;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px 25px;
+/* is only for testing before JS */
+.dropdown.active > .drop-btn + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
