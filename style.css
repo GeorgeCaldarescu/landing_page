@@ -1,3 +1,7 @@
+/* general styling */
+
+/* font-family: 'Epilogue', sans-serif; */
+
 *,
 *::before,
 *::after {
@@ -9,7 +13,18 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+  font-family: "Epilogue";
+  font-size: 18px;
 }
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+
+/* start with the navbar */
 
 header {
   display: flex;
@@ -27,6 +42,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-size: 20px;
 }
 
 .left-side {
@@ -41,9 +57,10 @@ nav {
 .right-side {
   border: 1px solid blue;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   margin: 20px 20px;
-  width: 200px;
+  width: 220px;
 }
 
 /* dropdown menu */
@@ -58,6 +75,7 @@ nav {
   background-position: right;
   display: flex;
   justify-content: space-between;
+  color: hsl(0, 0%, 41%);
 }
 
 .dropdown {
@@ -76,19 +94,30 @@ nav {
   align-items: center;
   border-radius: 0.25rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-
   /* to create animation I am goinig to use opacity instead of display none */
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
   pointer-events: none;
+  /* font-size: 18px; */
 }
 
-/* is only for testing before JS */
 .dropdown.active > .drop-btn + .dropdown-menu {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+}
+
+.dropdown.active > .drop-btn {
+  background-image: url(./images/icon-arrow-up.svg);
+  color: hsl(0, 0%, 8%);
+}
+
+/* hover normal links */
+
+a:focus,
+a:hover {
+  color: hsl(0, 0%, 8%);
 }
 
 /* links inside dropdown */
@@ -114,10 +143,22 @@ nav {
   margin: 0;
 }
 
+/* style register btn */
+.link-register {
+  border: 1px solid hsl(0, 0%, 41%);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.link-register:hover,
+.link-register:focus {
+  border: 1px solid hsl(0, 0%, 8%);
+}
+
 /* hamburger menu */
 .toggle-btn {
   position: absolute;
-  top: 0.75rem;
+  top: 1.75rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -132,6 +173,26 @@ nav {
   background-color: black;
 }
 
+/* main content */
+
+main {
+  display: flex;
+  margin: 5rem;
+  height: 80vh;
+}
+.left {
+  border: 1px solid orangered;
+  /* width: 70%; */
+}
+
+.right {
+  border: 1px solid yellowgreen;
+  background-image: url(./images/image-hero-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 45%;
+}
+
 /* Media query */
 
 @media (max-width: 400px) {
@@ -140,13 +201,18 @@ nav {
   }
   header {
     flex-direction: column;
+    height: auto;
   }
   .logo {
     width: 20%;
   }
-  .nav {
+  nav {
     display: none;
     flex-direction: column;
+    width: 70%;
+    position: relative;
+    left: 111px;
+    padding-bottom: 2rem;
   }
   .left-side {
     flex-direction: column;
