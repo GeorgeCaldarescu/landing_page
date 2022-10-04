@@ -24,14 +24,15 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <header>
-      <img src="./images/logo.svg" alt="snap-company-logo" class="logo" />
+    <header class="primary-header">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="snap-company-logo" />
+      </div>
+
       <!-- hamburger menu -->
-      <a href="#" class="toggle-btn">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
       <nav class="nav">
         <div class="left-side">
           <!-- dropdown menu -->

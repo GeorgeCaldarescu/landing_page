@@ -20,10 +20,10 @@ document.addEventListener("click", (e) => {
 
 // hamburger menu
 
-let toggleBtn = document.getElementsByClassName("toggle-btn")[0];
+// let toggleBtn = document.getElementsByClassName("toggle-btn")[0];
 
-const navbar = document.getElementsByTagName("nav")[0];
+// const navbar = document.getElementsByTagName("nav")[0];
 
-toggleBtn.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-});
+// toggleBtn.addEventListener("click", () => {
+//   navbar.classList.toggle("active");
+// });
